@@ -1,12 +1,12 @@
 
-
 fn main() {
     
-    let x: (i32, f64, u8) = (50, 6.45, 1);
+    let x = x_plus(12);
 
-    println!("{:?}", x);
+    println!("{x}")
+    // until control-flow: https://doc.rust-lang.org/book/ch03-05-control-flow.html
+}
 
-    println!("{}", x.2);
-
-    // until array type: https://doc.rust-lang.org/book/ch03-02-data-types.html
+fn x_plus(x: i32) -> i32 {
+    x + 20
 }
