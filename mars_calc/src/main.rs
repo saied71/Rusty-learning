@@ -1,11 +1,11 @@
-use stds::io;
+use std::io;
 
 fn main() {
-
+    println!("Enteryour weight: Kg");
     let mut input = String::new();
-    io::stdin().readline(&mut input);
-    input = input.parse::<f32>;
-    println!("Your weight on mars: {}kg", calc_mars_weght(input));
+    io::stdin().read_line(&mut input).unwrap();
+    let weight: f32 = input.trim().parse().unwrap();
+    println!("Your weight on mars: {}kg", calc_mars_weght(weight));
 }
 
 fn calc_mars_weght(weight: f32) ->  f32 {
