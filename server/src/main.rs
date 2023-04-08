@@ -1,4 +1,5 @@
 fn main() {
+    addr = String::new("127.0.0.1:8080");
     let server = Server::new("127.0.0.1:8080");
     server.run();
 }
@@ -15,6 +16,6 @@ impl Server {
     }
 
     fn run(self) {
-        
+
     }
 }
